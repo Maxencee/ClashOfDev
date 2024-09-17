@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text-color-default: #262625;
+    --bg-color-default: #F3F3F1;
+    --pink-default: #F588B9;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/font/Inter.ttf") format("opentype");
+}
+
+::selection {
+    color: var(--bg-color-default);
+    background-color: var(--pink-default);
+}
+
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-family: "Inter", Arial, sans-serif;
+    position: relative;
+    background-color: var(--bg-color-default);
+    color: var(--text-color-default);
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    border: none;
+    background: none;
+    color: unset;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    display: block;
+    width: 1em;
+    height: 1em;
+    font-style: normal;
+    user-select: none;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* customs */
+
+#toggle:checked + label .toggle-dot {
+    transform: translate(100%);
+}
