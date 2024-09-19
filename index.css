@@ -348,6 +348,12 @@ header {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .card-container h4 {
+        padding: 0 !important;
+    }
+}
+
 .animate-stasis {
     --sa: 6%;
     animation: stasis 1.3s infinite alternate ease-out;
